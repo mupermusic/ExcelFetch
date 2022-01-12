@@ -79,7 +79,9 @@ function App() {
       <div className='viewer'>
         {excelData===null&&<>No file selected</>}
         {excelData!==null&&(
-       
+        <Map className="pigeon-map" height={500} width={860} defaultCenter={[35.7242224887494, 51.42966135813327]} defaultZoom={11}>
+          <Data />
+        </Map>
         )}       
       </div>
 
